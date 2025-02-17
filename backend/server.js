@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import express from "express"
 import cors from "cors"
+import foodRouter from "./routes/foodRoute.js";
 
 //** create a variable for call the express */
 const app =express()
@@ -13,6 +14,9 @@ const connection = mongoose.connection
 connection.once("open",()=>{
     console.log("Mongodb connection is successfuly")
 })
+
+//** api endpoints */
+app.use("/api/food",foodRouter)
 
 //middleware
 app.use(express.json())
