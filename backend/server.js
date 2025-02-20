@@ -2,12 +2,15 @@ import mongoose from "mongoose";
 import express from "express"
 import cors from "cors"
 import foodRouter from "./routes/foodRoute.js";
+import dotenv from "dotenv"
 
+
+dotenv.config()
 //** create a variable for call the express */
 const app =express()
 
 //** create a database connection  */
-const mongoURL = "mongodb+srv://admin:111@cluster0.paigr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const mongoURL = process.env.MONGO_URL
 mongoose.connect(mongoURL)
 const connection = mongoose.connection
 
