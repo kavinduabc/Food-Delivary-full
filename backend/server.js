@@ -3,6 +3,9 @@ import express from "express"
 import cors from "cors"
 import foodRouter from "./routes/foodRoute.js";
 import dotenv from "dotenv"
+import userRouter from "./routes/userRoure.js";
+import bodyParser from "body-parser";
+//import userRouter from "./routes/userRoure.js";
 
 
 dotenv.config()
@@ -20,6 +23,7 @@ connection.once("open",()=>{
 
 //** api endpoints */
 app.use("/api/food",foodRouter)
+app.use("/api/users",userRouter)
 
 //middleware
 app.use(express.json())
