@@ -9,15 +9,15 @@ const Signin = () => {
      <div className='container'>
         <div className="title"><h2>Login</h2></div>
         <div className="signin-form">
-            <form>
+            <form method="POST" action='http://localhost/FoodDelivary/backend/Login.php'>
            
                 <span className='f-fata'>
                    <label for='email'>Email</label> 
-                   <input type='email' placeholder='Enter your email'/>
+                   <input type='email' placeholder='Enter your email'name='email'/>
                 </span>
                 <span className='f-fata'>
                    <label for='Password'>Password</label> 
-                   <input type='password' placeholder='Enter your password'/>
+                   <input type='password' placeholder='Enter your password'name='password'/>
                 </span>
                 <div className="check-box">
                     <input type='checkbox'/>
