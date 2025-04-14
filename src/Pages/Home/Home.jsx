@@ -4,7 +4,7 @@ import Header from '../../Components/Header/Header'
 import Emenu from '../../Components/E-menu/Emenu'
 import FoodDisplay from '../../Components/FoodDisplay/FoodDisplay'
 import BannerSlider from '../../Components/carosel/Carosel'
-import AppDownloard from '../../Components/AppDownloard'
+
 
 
 const Home = () => {
