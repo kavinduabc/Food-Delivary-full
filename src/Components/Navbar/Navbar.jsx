@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-    <Link to='/'><img src={assets.logo} alt="logo" className="logo" /></Link>  
+    <Link to='/'><h1 className='logo'>PizzaMart</h1></Link>  
       <ul className="navbar-menu">
         <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>
           Home

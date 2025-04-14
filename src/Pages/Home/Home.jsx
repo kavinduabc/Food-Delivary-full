@@ -3,7 +3,8 @@ import './Home.css'
 import Header from '../../Components/Header/Header'
 import Emenu from '../../Components/E-menu/Emenu'
 import FoodDisplay from '../../Components/FoodDisplay/FoodDisplay'
-import AppDownloard from '../../Components/AppDownloard/AppDownloard'
+import BannerSlider from '../../Components/carosel/Carosel'
+
 
 const Home = () => {
 
@@ -12,9 +13,10 @@ const Home = () => {
   return (
     <div>
       <Header/>
+      <BannerSlider/>
       <Emenu category={category} setCategory={setCategory}/>
       <FoodDisplay category={category}/>
-      <AppDownloard/>
+      
     </div>
   )
 }

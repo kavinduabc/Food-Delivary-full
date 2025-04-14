@@ -7,9 +7,10 @@ const Footer = () => {
     <div className='footer'id='footer'>
        <div className="footer-content">
         <div className="footer-content-left">
-            <img src={assets.logo} alt='logo'/>
-            <p>Discover a world of flavors at your fingertips. Fresh meals, endless cuisines, 
-                delivered hot and fast to your door!</p>
+        <h1 className='logo'>PizzaMart</h1>
+            <p>Our pizza shop's navbar makes ordering easy and fast. Browse the menu, customize your pizza,
+               find deals, and check store info with just a click. Whether you're craving a classic or something bold,
+               everything you need is right at your fingertips. Simple, smooth, and made for pizza lovers!</p>
             <div className="footer-social-icon">
                 <img src={assets.facebook_icon} alt="fb" />
                 <img src={assets.twitter_icon} alt="tw" />
@@ -28,11 +29,11 @@ const Footer = () => {
         <div className="footer-content-right">
             <h2>GET IN TOUCH</h2>
             <li>077 664 4455</li>
-            <li>contact@totatogamil.com</li>
+            <li>contact@pizzaMartgamil.com</li>
         </div>
        </div>
        <hr />
-       <p className='footer-coopyright'>Copyright 2024 tomato.com All Right Reserved</p>
+       <p className='footer-coopyright'>Copyright 2024 pizzaMart.com All Right Reserved</p>
        
     </div>
   )
