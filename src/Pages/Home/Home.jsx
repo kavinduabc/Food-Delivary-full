@@ -17,7 +17,7 @@ const Home = () => {
       <BannerSlider/>
       <Emenu category={category} setCategory={setCategory}/>
       <FoodDisplay category={category}/>
-      <AppDownloard/>
+      
       
     </div>
   )
