@@ -14,8 +14,8 @@ const Placeholder = () => {
       <div className="place-order-left">
         <p className="title">Delivery Information</p>
         <div className="multi-filds">
-          <input type="text" placeholder="First name" />
-          <input type="text" placeholder="Last name" />
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
         </div>
         <input type="email" placeholder="Email address" />
         <input type="text" placeholder="Street" />
